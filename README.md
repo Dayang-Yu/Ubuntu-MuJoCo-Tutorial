@@ -10,8 +10,6 @@
 
 访问MuJoCo官网：https://github.com/google-deepmind/mujoco/releases 进行下载
 
-![img.png](img.png)
-
 对于Linux的Ubuntu系统，应下载mujoco-版本号-linux-x86_64.tar.gz格式的文件选项
 
 ```python
