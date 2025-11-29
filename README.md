@@ -766,8 +766,61 @@ python3 -c "import mujoco; print('mujoco ok')"
 #替换你自己命名的文件
 python3 <filename>
 ```
-然后就可以开心的看到openarm了🎉🎉🎉
+然后就可以开心的看到openarm了
 
+---
 
+但是这样每次在终端里先启动虚拟环境再运行程序非常的麻烦，这时候我们就可以在pycharm中直接添加编译器，让他自动选择我们已经调试好的虚拟环境
 
+步骤 1：打开 PyCharm 的解释器设置
 
+菜单路径：
+```
+File → Settings → Project: <你的项目名> → Python Interpreter
+```
+你会看到当前选中的解释器可能是这样的（错误示例）：
+```
+Python 3.12 (python)  ~/myenv/bin/python/bin/python   ❌
+```
+
+这个路径是不对的，需要更换。
+
+步骤 2：添加你的虚拟环境解释器
+
+在同一页面右上角点击：
+```
+⚙ → Add Interpreter...
+```
+
+选择：
+```
+Add Existing Environment
+```
+
+然后文件选择器中逐级进入：
+```
+/home/<你的用户名>/myenv/bin/
+```
+
+选择以下其中之一：
+```
+python3.12   ← 推荐
+python       ← 也可以
+```
+
+点击 OK / Apply。
+
+步骤 3：验证解释器是否正确加载
+
+成功之后，PyCharm 的解释器下拉框里应该显示：
+```
+Python 3.12  (/home/<你的用户名>/myenv/bin/python3.12)
+```
+
+并且包列表中应该能看到：
+
+mujoco、numpy、scipy、pyautogui、ikpy等依赖。
+
+这时候，我们就可以直接通过点击文件右上角的运行（绿色的三角🟢▶️）或者右键文件进行运行
+
+恭喜你，接下来可以开始你的MuJoCo之旅了🎉🎉🎉
