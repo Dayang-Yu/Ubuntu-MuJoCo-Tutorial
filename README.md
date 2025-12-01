@@ -6,6 +6,15 @@
 
 ---
 
+# 目录
+
+1. [下载MuJoCo在Linux系统的官方文件](#1-下载MuJoCo在Linux系统的官方文件)
+2. [下载Pycharm](#2-下载Pycharm)
+3. [配置 Python 虚拟环境](#3-配置-Python-虚拟环境)
+4. [运行程序](#4-运行程序)
+
+---
+
 # 1.下载MuJoCo在Linux系统的官方文件
 
 访问MuJoCo官网：https://github.com/google-deepmind/mujoco/releases 进行下载
